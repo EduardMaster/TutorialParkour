@@ -1,11 +1,11 @@
 package net.eduard.parkour;
 
+import net.eduard.api.lib.modules.Mine;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import net.eduard.api.lib.Mine;
 import net.eduard.api.server.minigame.MinigameMap;
 
 public class ParkourCommand implements CommandExecutor {

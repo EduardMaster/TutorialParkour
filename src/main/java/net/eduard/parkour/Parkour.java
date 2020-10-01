@@ -2,6 +2,8 @@ package net.eduard.parkour;
 
 import java.util.HashMap;
 
+import net.eduard.api.lib.modules.Extra;
+import net.eduard.api.lib.modules.Mine;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -24,14 +26,13 @@ import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 
-import net.eduard.api.lib.Mine;
 import net.eduard.api.lib.config.Config;
 import net.eduard.api.server.minigame.Minigame;
 import net.eduard.api.server.minigame.MinigameMap;
 import net.eduard.api.server.minigame.MinigameRoom;
 
 public class Parkour extends Minigame {
-	private Main plugin;
+	private final Main plugin;
 	public Parkour(Main main) {
 		super("Parkour");
 		this.plugin = main;
@@ -147,7 +148,7 @@ public class Parkour extends Minigame {
 		inv.setItem(2, setSpawnItem);
 		inv.setItem(6, setEndItem);
 		inv.setItem(8, cancelItem);
-		MinigameMap map = new MinigameMap(this, name);
+		MinigameMap map = new MinigameMap(this, name,name);
 		p.setGameMode(GameMode.CREATIVE);
 		map.setSpawn(p.getLocation());
 		map.getLocations().put("end", p.getLocation());
@@ -254,8 +255,8 @@ public class Parkour extends Minigame {
 
 		Player p = e.getPlayer();
 		if (isPlaying(p)) {
-			if (Mine.startWith(e.getMessage(), "/leave")
-					|| Mine.startWith(e.getMessage(), "/sair")) {
+			if (Extra.startWith(e.getMessage(), "/leave")
+					|| Extra.startWith(e.getMessage(), "/sair")) {
 				leave(p);
 			} else {
 				chat("OnlyQuit", p);
