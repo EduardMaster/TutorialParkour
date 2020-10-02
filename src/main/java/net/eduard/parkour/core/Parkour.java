@@ -1,9 +1,10 @@
-package net.eduard.parkour;
+package net.eduard.parkour.core;
 
 import java.util.HashMap;
 
 import net.eduard.api.lib.modules.Extra;
 import net.eduard.api.lib.modules.Mine;
+import net.eduard.parkour.EduParkour;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -32,8 +33,8 @@ import net.eduard.api.server.minigame.MinigameMap;
 import net.eduard.api.server.minigame.MinigameRoom;
 
 public class Parkour extends Minigame {
-	private final Main plugin;
-	public Parkour(Main main) {
+	private final EduParkour plugin;
+	public Parkour(EduParkour main) {
 		super("Parkour");
 		this.plugin = main;
 	}
@@ -46,9 +47,9 @@ public class Parkour extends Minigame {
 			"§a§lConfime o Parkour");
 	public ItemStack cancelItem = Mine.newItem(Material.BED,
 			"§c§lDelete o Parkour");
-	private HashMap<Player, Location> checkpoints = new HashMap<>();
-	private HashMap<Player, Integer> falls = new HashMap<>();
-	private HashMap<Player, MinigameMap> criando = new HashMap<>();
+	private final HashMap<Player, Location> checkpoints = new HashMap<>();
+	private final HashMap<Player, Integer> falls = new HashMap<>();
+	private final HashMap<Player, MinigameMap> criando = new HashMap<>();
 	private Material checker = Material.DIAMOND_BLOCK;
 	private double reward = 100;
 
@@ -301,9 +302,9 @@ public class Parkour extends Minigame {
 		}
 	}
 
-	@Override
+
 	public void event(MinigameRoom room) {
-		// TODO Auto-generated method stub
+
 
 	}
 

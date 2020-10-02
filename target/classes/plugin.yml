@@ -1,6 +1,6 @@
 name: EduParkour
 description: Minigame Parkour basendo em Parkours da vida
-main: net.eduard.parkour.Main
+main: net.eduard.parkour.EduParkour
 version: 1.0-SNAPSHOT
 author: Eduard
 authors: [Eduard]

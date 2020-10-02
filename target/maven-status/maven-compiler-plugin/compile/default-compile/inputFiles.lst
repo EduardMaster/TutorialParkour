@@ -1,3 +1,10 @@
-E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\Parkour.java
-E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\Main.java
-E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\ParkourCommand.java
+E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\command\ParkourSetLobbyCommand.java
+E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\command\ParkourSetSpawnCommand.java
+E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\command\ParkourLobbyCommand.java
+E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\core\Parkour.java
+E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\command\ParkourDeleteCommand.java
+E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\command\ParkourCommand.java
+E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\EduParkour.java
+E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\command\ParkourHelpCommand.java
+E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\command\ParkourCreateCommand.java
+E:\Tudo\Minecraft - Server\repositorios\EduParkour\src\main\java\net\eduard\parkour\command\ParkourSetEndCommand.java
