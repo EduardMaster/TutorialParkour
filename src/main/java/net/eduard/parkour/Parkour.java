@@ -39,13 +39,13 @@ public class Parkour extends Minigame {
 	}
 
 	public ItemStack setSpawnItem = Mine.newItem(Material.STICK,
-			"§e§lEscolha o Spawn");
+			"Â§eÂ§lEscolha o Spawn");
 	public ItemStack setEndItem = Mine.newItem(Material.BLAZE_ROD,
-			"§d§lEscolha o Fim");
+			"Â§dÂ§lEscolha o Fim");
 	public ItemStack confirmItem = Mine.newItem(Material.BEACON,
-			"§a§lConfime o Parkour");
+			"Â§aÂ§lConfime o Parkour");
 	public ItemStack cancelItem = Mine.newItem(Material.BED,
-			"§c§lDelete o Parkour");
+			"Â§cÂ§lDelete o Parkour");
 	private HashMap<Player, Location> checkpoints = new HashMap<>();
 	private HashMap<Player, Integer> falls = new HashMap<>();
 	private HashMap<Player, MinigameMap> criando = new HashMap<>();

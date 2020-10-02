@@ -10,7 +10,7 @@ import net.eduard.api.server.minigame.MinigameMap;
 
 public class ParkourCommand implements CommandExecutor {
 
-	private Parkour parkour;
+	private final Parkour parkour;
 
 	public ParkourCommand(Parkour parkour) {
 		this.parkour = parkour;
@@ -22,12 +22,12 @@ public class ParkourCommand implements CommandExecutor {
 		if (Mine.onlyPlayer(sender)) {
 			Player p = (Player) sender;
 			if (args.length == 0) {
-				p.sendMessage("§c/parkour help");
+				p.sendMessage("Â§c/parkour help");
 			} else {
 				String sub = args[0];
 				if (sub.equalsIgnoreCase("create")) {
 					if (args.length == 1) {
-						sender.sendMessage("§c/parkour create <parkour>");
+						sender.sendMessage("Â§c/parkour create <parkour>");
 					} else {
 						String name = args[1];
 						if (parkour.hasMap(name)) {
@@ -38,7 +38,7 @@ public class ParkourCommand implements CommandExecutor {
 					}
 				} else if (sub.equalsIgnoreCase("delete")) {
 					if (args.length == 1) {
-						sender.sendMessage("§c/parkour delete <parkour>");
+						sender.sendMessage("Â§c/parkour delete <parkour>");
 					} else {
 						String name = args[1];
 
@@ -61,7 +61,7 @@ public class ParkourCommand implements CommandExecutor {
 					}
 				} else if (sub.equalsIgnoreCase("setspawn")) {
 					if (args.length == 1) {
-						p.sendMessage("§c/parkour setspawn <parkour>");
+						p.sendMessage("Â§c/parkour setspawn <parkour>");
 					} else {
 						String name = args[1];
 						if (parkour.hasMap(name)) {
@@ -74,7 +74,7 @@ public class ParkourCommand implements CommandExecutor {
 					}
 				} else if (sub.equalsIgnoreCase("setend")) {
 					if (args.length == 1) {
-						p.sendMessage("§c/parkour setend <parkour>");
+						p.sendMessage("Â§c/parkour setend <parkour>");
 					} else {
 						String name = args[1];
 						if (parkour.hasMap(name)) {
@@ -87,21 +87,21 @@ public class ParkourCommand implements CommandExecutor {
 					}
 				}else if (sub.equalsIgnoreCase("help")) {
 					sender.sendMessage(
-							"§b§l-=-=-=-=-=-=-=- §6§lHELP §b§l-=-=-=-=-=-=-=-=");
+							"Â§bÂ§l-=-=-=-=-=-=-=- Â§6Â§lHELP Â§bÂ§l-=-=-=-=-=-=-=-=");
 					if (sender.hasPermission("parkour.admin")) {
 						sender.sendMessage(
-								"§a/parkour create|delete §b<arena>");
-						sender.sendMessage("§a/parkour setspawn §b<arena>");
-						sender.sendMessage("§a/parkour setend §b<arena>");
-						sender.sendMessage("§a/parkour reload");
-						sender.sendMessage("§a/parkour setlobby");
+								"Â§a/parkour create|delete Â§b<arena>");
+						sender.sendMessage("Â§a/parkour setspawn Â§b<arena>");
+						sender.sendMessage("Â§a/parkour setend Â§b<arena>");
+						sender.sendMessage("Â§a/parkour reload");
+						sender.sendMessage("Â§a/parkour setlobby");
 					}
-					sender.sendMessage("§a/parkour play|jogar");
-					sender.sendMessage("§a/parkour help");
-					sender.sendMessage("§a/parkour lobby");
+					sender.sendMessage("Â§a/parkour play|jogar");
+					sender.sendMessage("Â§a/parkour help");
+					sender.sendMessage("Â§a/parkour lobby");
 
 				}else {
-					p.sendMessage("§c/parkour help");
+					p.sendMessage("Â§c/parkour help");
 				}
 			}
 		

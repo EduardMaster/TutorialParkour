@@ -15,6 +15,7 @@ public class Main extends EduardPlugin {
 	@Override
 	public void onEnable() {
 		plugin = this;
+		super.onEnable();
 
 		setParkour(new Parkour(this));
 		getConfigs().add("Create", "&bO Parkour $arena foi criado!");
@@ -41,6 +42,7 @@ public class Main extends EduardPlugin {
 
 	@Override
 	public void onDisable() {
+		super.onDisable();
 	}
 	public Parkour getParkour() {
 		return parkour;
