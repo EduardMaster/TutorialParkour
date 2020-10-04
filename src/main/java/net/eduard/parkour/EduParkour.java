@@ -45,6 +45,7 @@ public class EduParkour extends EduardPlugin {
         getMessages().add("Lobby", "&6Voce foi para o Lobby do Parkour!");
         getMessages().add("Join", "&6Voce entrou no Parkour &e$arena");
         getMessages().add("Quit", "&6Voce desistiu do Parkour $arena");
+        getMessages().add("OnlyQuit", "&6Voce só pode usar /sair no modo parkour.");
         getMessages().add("OnlyAdmin", "&cPrecisa da permissao parkour.admin");
         getMessages().add("Win", "&6Voce terminou o Parkour &e$player &2(&a$money&2)");
         getMessages().add("WinBroadcast",
