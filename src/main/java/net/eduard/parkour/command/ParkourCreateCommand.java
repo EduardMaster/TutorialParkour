@@ -2,7 +2,6 @@ package net.eduard.parkour.command;
 
 import net.eduard.api.lib.manager.CommandManager;
 import net.eduard.api.lib.modules.Mine;
-import net.eduard.api.server.minigame.MinigameMap;
 import net.eduard.parkour.core.Parkour;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
