@@ -21,7 +21,7 @@ public class ParkourCreateCommand extends CommandManager {
     public boolean onCommand(CommandSender sender, Command command,
                              String label, String[] args) {
         if (Mine.onlyPlayer(sender)) {
-            Player p = (Player) sender;
+            Player player = (Player) sender;
 
 
             if (args.length < 2) {
@@ -30,9 +30,9 @@ public class ParkourCreateCommand extends CommandManager {
 
                 String name = args[1];
                 if (parkour.hasMap(name)) {
-                    parkour.chat("AlreadyExists", p);
+                    parkour.chat("AlreadyExists", player);
                 } else {
-                    parkour.createNewMap(p, name);
+                    parkour.createNewMap(player, name);
                 }
             }
 

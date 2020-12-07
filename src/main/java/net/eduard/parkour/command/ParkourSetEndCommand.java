@@ -22,17 +22,17 @@ public class ParkourSetEndCommand extends CommandManager {
     public boolean onCommand(CommandSender sender, Command command,
                              String label, String[] args) {
         if (Mine.onlyPlayer(sender)) {
-            Player p = (Player) sender;
+            Player player = (Player) sender;
             if (args.length == 1) {
-                p.sendMessage("§c/parkour setend <parkour>");
+                player.sendMessage("§c/parkour setend <parkour>");
             } else {
                 String name = args[1];
                 if (parkour.hasMap(name)) {
                     MinigameMap map = parkour.getMap(name);
-                    map.getLocations().put("end", p.getLocation());
-                    parkour.chat("SetEnd", p);
+                    map.getLocations().put("end", player.getLocation());
+                    parkour.chat("SetEnd", player);
                 } else {
-                    parkour.chat("Invalid", p);
+                    parkour.chat("Invalid", player);
                 }
             }
         }

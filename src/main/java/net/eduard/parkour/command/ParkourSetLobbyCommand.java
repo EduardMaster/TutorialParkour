@@ -21,11 +21,11 @@ public class ParkourSetLobbyCommand extends CommandManager {
     public boolean onCommand(CommandSender sender, Command command,
                              String label, String[] args) {
         if (Mine.onlyPlayer(sender)) {
-            Player p = (Player) sender;
+            Player player = (Player) sender;
 
 
-            parkour.setLobby(p.getLocation());
-            parkour.chat("SetLobby", p);
+            parkour.setLobby(player.getLocation());
+            parkour.chat("SetLobby", player);
 
         }
 

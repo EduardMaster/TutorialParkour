@@ -21,7 +21,7 @@ public class ParkourDeleteCommand extends CommandManager {
     public boolean onCommand(CommandSender sender, Command command,
                              String label, String[] args) {
         if (Mine.onlyPlayer(sender)) {
-            Player p = (Player) sender;
+            Player player = (Player) sender;
 
 
             if (args.length == 1) {
@@ -31,9 +31,9 @@ public class ParkourDeleteCommand extends CommandManager {
 
                 if (parkour.hasMap(name)) {
                     parkour.removeMap(parkour.getMap(name));
-                    parkour.chat("Delete", p);
+                    parkour.chat("Delete", player);
                 } else {
-                    parkour.chat("Invalid", p);
+                    parkour.chat("Invalid", player);
                 }
             }
 

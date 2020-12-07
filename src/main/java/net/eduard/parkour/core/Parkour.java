@@ -38,7 +38,7 @@ public class Parkour extends Minigame {
     private final EduParkour plugin;
 
     public Parkour() {
-        super("Parkour");
+        super("Parkour","");
         this.plugin = EduParkour.getInstance();
     }
 
