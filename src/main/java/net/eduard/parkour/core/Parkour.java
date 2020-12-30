@@ -333,10 +333,4 @@ public class Parkour extends Minigame {
     }
 
 
-    public void event(MinigameRoom room) {
-
-
-    }
-
-
 }
